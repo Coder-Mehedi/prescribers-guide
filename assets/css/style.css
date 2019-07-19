@@ -4,6 +4,12 @@
     src: url('../fonts/LatoRegular/fonts/LatoRegular.eot') format('embedded-opentype'), url('../fonts/LatoRegular/fonts/LatoRegular.woff2') format('woff2'), url('../fonts/LatoRegular/fonts/LatoRegular.woff') format('woff'), url('../fonts/LatoRegular/fonts/LatoRegular.ttf') format('truetype'), url('../fonts/LatoRegular/fonts/LatoRegular.svg#LatoRegular') format('svg');
 }
 
+@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/LatoBold/fonts/LatoBold.eot');
+    src: url('../fonts/LatoBold/fonts/LatoBold.eot') format('embedded-opentype'), url('../fonts/LatoBold/fonts/LatoBold.woff2') format('woff2'), url('../fonts/LatoBold/fonts/LatoBold.woff') format('woff'), url('../fonts/LatoBold/fonts/LatoBold.ttf') format('truetype'), url('../fonts/LatoBold/fonts/LatoBold.svg#LatoBold') format('svg');
+}
+
 *,
 h1,
 h2,
@@ -97,7 +103,7 @@ input:focus {
     border-right-color: #005182;
 }
 
-button {
+form button {
     background: #bdd73c;
     display: flex;
     justify-content: center;
@@ -164,6 +170,7 @@ input::placeholder {
 
 button>* {
     margin-right: 10px;
+    margin-left: -28px;
 }
 
 
@@ -185,4 +192,77 @@ body#result {
     min-height: 442px;
     border-radius: 5px;
     box-shadow: rgb(0, 0, 0) 0px 0px 15px 1px;
+}
+
+.result-content {
+    padding-left: 107px;
+    padding-top: 24px;
+}
+
+.result-content button {
+    width: 139px;
+    height: 36px;
+    border-radius: 20px;
+    background: #005182;
+    color: #fff;
+    margin-top: 11px;
+    margin-bottom: 17px;
+    border: none;
+}
+
+.result-area h1 {
+    color: #0b5887;
+    font-size: 28px;
+    line-height: 30px;
+    padding-left: 174px;
+}
+
+.result-area table {
+    width: 965px;
+}
+
+.result-area .data th {
+    background: #bdd73c;
+    height: 55px;
+    font-family: 'LatoBold';
+    font-size: 20px;
+    line-height: 30px;
+    color: #5b5b5b;
+}
+
+.result-area table,
+.result-area th,
+.result-area td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.result-area td {
+    /* text-align: center; */
+    height: 82px;
+    color: #005182;
+    font-family: 'LatoBold';
+    font-size: 20px;
+    line-height: 23px;
+    /* padding-left: 111px; */
+    box-sizing: border-box;
+}
+
+.logo {
+    padding-left: 330px;
+}
+
+td:first-child {
+    width: 347px;
+    padding-left: 111px;
+}
+
+td:nth-child(2) {
+    width: 290px;
+    padding-left: 73px;
+}
+
+tdd:nth-child(3) {
+    padding-left: 73px;
 }
