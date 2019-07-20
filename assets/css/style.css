@@ -177,7 +177,7 @@ button>* {
 /* result page */
 
 body#result {
-    background: url('../images/home-background.png') no-repeat 41%;
+    background: url('../images/prescribe-bg.jpg') no-repeat 41%;
     background-size: cover;
     height: 100%;
     font-family: 'LatoRegular';
@@ -186,7 +186,7 @@ body#result {
 }
 
 .result-area {
-    margin-top: 38px;
+    margin-top: 30px;
     width: 100%;
     background: #fff;
     min-height: 442px;
@@ -195,11 +195,13 @@ body#result {
 }
 
 .result-content {
-    padding-left: 107px;
-    padding-top: 24px;
+    /* padding-left: 107px; */
+    padding-top: 32px;
+    width: 1009px;
 }
 
-.result-content button {
+.result-content .single-result button,
+.back-btn {
     width: 139px;
     height: 36px;
     border-radius: 20px;
@@ -208,6 +210,7 @@ body#result {
     margin-top: 11px;
     margin-bottom: 17px;
     border: none;
+    cursor: pointer;
 }
 
 .result-area h1 {
@@ -263,6 +266,113 @@ td:nth-child(2) {
     padding-left: 73px;
 }
 
-tdd:nth-child(3) {
+td:nth-child(3) {
     padding-left: 73px;
+}
+
+.single-result {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 7px -4px;
+    width: 1009px;
+}
+
+.all-results>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.single-result .category {
+    width: 203px;
+    height: 90px;
+    background: #bdd73c;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    font-family: 'LatoBold';
+    letter-spacing: -0.9px;
+}
+
+.category>* {
+    margin-left: 26px;
+}
+
+.pb-47 {
+    padding-bottom: 36px;
+}
+
+.result-content h2 {
+    padding-bottom: 20px;
+    color: #0b5887;
+}
+
+.detail {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.detail-btn {
+    margin-right: 22px;
+}
+
+.details-button.detail-page-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.details-button.detail-page-btn,
+.details-button.detail-page-btn>img {
+    margin: 0;
+    margin-right: 0px;
+}
+
+.detail h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #5b5b5b;
+    font-family: 'LatoBold';
+}
+
+.detail p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #5b5b5b;
+}
+
+.result-bottom-btn>button {
+    width: 100%;
+    background: #bdd73c;
+    border: none;
+    height: 61px;
+}
+
+.result-bottom-btn {
+    width: 100%;
+    padding-bottom: 107px;
+    padding-top: 79px;
+}
+
+.result-bottom-btn>*:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.result-content>* {
+    padding-left: 97px;
+}
+
+.logo.pb-47 img {
+    padding-left: 341px;
+}
+
+body#result-v2 {
+    background: url('../images/result-bg.png') no-repeat 41%;
+    background-size: cover;
+    font-family: 'LatoRegular';
 }
