@@ -78,6 +78,11 @@ form,
     /* margin: 0 auto; */
 }
 
+.submit-btn button>* {
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
 input,
 button {
     width: 100%;
@@ -112,6 +117,7 @@ form button {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    font-family: 'LatoRegular';
 }
 
 .form-head {
@@ -146,6 +152,8 @@ form button {
 .footer-text .container nav a {
     color: white;
     text-decoration: none;
+    font-size: 13px;
+    line-height: 30px;
 }
 
 .footer-text .container nav a:not(:last-child):after {
@@ -156,7 +164,7 @@ form button {
 
 .footer img {
     position: relative;
-    left: -184px;
+    left: -117px;
     width: auto;
     bottom: -40px;
 }
@@ -169,7 +177,7 @@ input::placeholder {
 }
 
 button>* {
-    margin-right: 10px;
+    margin-right: 2px;
     margin-left: -28px;
 }
 
@@ -194,10 +202,15 @@ body#result {
     box-shadow: rgb(0, 0, 0) 0px 0px 15px 1px;
 }
 
-.result-content {
+#result .result-content,
+#result-v2 .result-content {
     /* padding-left: 107px; */
-    padding-top: 32px;
+    padding-top: 26px;
     width: 1009px;
+}
+
+#result-v2 .result-content {
+    padding-top: 32px;
 }
 
 .result-content .single-result button,
@@ -211,6 +224,9 @@ body#result {
     margin-bottom: 17px;
     border: none;
     cursor: pointer;
+    font-family: 'LatoRegular';
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .result-area h1 {
@@ -304,9 +320,11 @@ td:nth-child(3) {
     padding-bottom: 36px;
 }
 
-.result-content h2 {
+.result-content .lorazepam {
     padding-bottom: 20px;
     color: #0b5887;
+    font-size: 28px;
+    line-height: 30px;
 }
 
 .detail {
@@ -315,7 +333,7 @@ td:nth-child(3) {
 }
 
 .detail-btn {
-    margin-right: 22px;
+    margin-right: 35px;
 }
 
 .details-button.detail-page-btn {
@@ -329,8 +347,8 @@ td:nth-child(3) {
 
 .details-button.detail-page-btn,
 .details-button.detail-page-btn>img {
-    margin: 0;
-    margin-right: 0px;
+    margin: 0px;
+    margin-right: -10px;
 }
 
 .detail h4 {
@@ -351,12 +369,22 @@ td:nth-child(3) {
     background: #bdd73c;
     border: none;
     height: 61px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    font-family: 'LatoRegular';
 }
 
 .result-bottom-btn {
-    width: 100%;
+    width: 1009px;
     padding-bottom: 107px;
     padding-top: 79px;
+}
+
+.result-bottom-btn p {
+    display: none;
+    padding: 15px;
 }
 
 .result-bottom-btn>*:not(:last-child) {
@@ -364,15 +392,25 @@ td:nth-child(3) {
 }
 
 .result-content>* {
-    padding-left: 97px;
+    margin-left: 97px;
 }
 
 .logo.pb-47 img {
-    padding-left: 341px;
+    padding-left: 10px;
 }
 
 body#result-v2 {
     background: url('../images/result-bg.png') no-repeat 41%;
     background-size: cover;
     font-family: 'LatoRegular';
+}
+
+.copyright p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#result-v2 .footer-text .container,
+#result .footer-text .container {
+    bottom: 132px;
 }
